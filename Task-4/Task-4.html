@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjith-portfolio</title>
+    <link rel="stylesheet" href="Task-4.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">My Portfolio</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to My website</h1>
+            <p>A passionate web developer creating modern and responsive web applications.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I specialize in HTML, CSS, Javascript and also python. I love building things for the web and am always eager to learn new technologies. This portfolio is a showcase of my journey and the projects I have done.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>To-do list website</h3>
+                    <p>Here I created the website for assigning the To-do tasks that has a functioning of Toggling and Removing.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Virtual and AI augmented Solution for designing of Vehicles</h3>
+                    <p>Real-world solution for designing a vehicle virtually with AI.</p>
+                </div>
+                <div class="project-card">
+                    <h3>cafe-mangement system</h3>
+                    <p>Creating a menu of items using python programming.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out! You can email me at:</p>
+            <a href="mailto:">ransht720@gmail.com</a>
+        </section>
+    
+    <section id="products">
+    <div class="container">
+        <h1>Products</h1>
+        <div class="controls">
+            <!-- Filter by Category -->
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+            
+            <!-- Sort by -->
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating-desc">Rating: High to Low</option>
+            </select>
+        </div>
+
+        <div id="product-grid" class="product-grid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </div>
+    </section>
+
+</main>
+
+<script src="Task-4.js"></script>
+
+
+</body>
+</html>
